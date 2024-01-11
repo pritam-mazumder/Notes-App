@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "461970008923",
+    "project_id": "note-app-prac",
+    "storage_bucket": "note-app-prac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461970008923:android:6660880859b19a7072887e",
+        "android_client_info": {
+          "package_name": "com.example.noteappprac"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "461970008923-usd4b9f8bcra79skc9jt89g4to50g6jp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwdyCfzdQ2hsGpcXhg7i_aOj3DNdvLq60"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "461970008923-usd4b9f8bcra79skc9jt89g4to50g6jp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
