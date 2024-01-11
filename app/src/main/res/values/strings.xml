@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Note App Prac</string>
     <string name="default_web_client_id" />
+    <string name="jot_down_an">Jot Down anything you want to achieve, today or in the future</string>
 </resources>

@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingHorizontal="50dp"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/addNotesButton"
         android:layout_width="0dp"
+        style="@style/buttonFilled"
         android:layout_height="wrap_content"
         android:text="Add Notes"
         app:layout_constraintBottom_toTopOf="@+id/viewNotesButton"
@@ -18,9 +19,10 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/viewNotesButton"
         android:layout_width="0dp"
+        style="@style/buttonFilled"
         android:layout_height="wrap_content"
         android:text="View Notes"
         app:layout_constraintBottom_toTopOf="@+id/logoutButton"
@@ -28,9 +30,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addNotesButton" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/logoutButton"
         android:layout_width="0dp"
+        style="@style/buttonFilled"
         android:layout_height="wrap_content"
         android:text="Log Out"
         app:layout_constraintBottom_toBottomOf="parent"
