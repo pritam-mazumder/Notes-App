@@ -23,16 +23,16 @@ class AddNote : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
         val currentUser = auth.currentUser
 
-        binding.submit.setOnClickListener {
+        binding.saveNoteButton.setOnClickListener {
 
-            val title = binding.titleTextView.text.toString()
-            val description = binding.descriptionTextView.text.toString()
+            val title = binding.editTextTitle.text.toString()
+            val description = binding.editTextDiscriiption.text.toString()
 
             currentUser?.let { user ->
                 val userReference = database.child("user").child(user.uid).child("notes")
                 val noteKey = userReference.push().key
 
-                val noteItem = NoteItems(title, description)
+                val noteItem = NoteItems(title, description, noteKey ?: "")
                 if (noteKey != null) {
                     database.child("user").child(user.uid).child("notes")
                         .child(noteKey).setValue(noteItem)
@@ -42,8 +42,8 @@ class AddNote : AppCompatActivity() {
                             else
                                 Toast.makeText(this, "❌", Toast.LENGTH_SHORT).show()
                         }
-                    binding.titleTextView.text = null
-                    binding.descriptionTextView.text = null
+                    binding.editTextTitle.text = null
+                    binding.editTextDiscriiption.text = null
                 }
             }
         }

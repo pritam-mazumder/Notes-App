@@ -22,7 +22,7 @@
             android:padding="10dp">
 
             <TextView
-                android:id="@+id/titleET"
+                android:id="@+id/titleTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView"
@@ -37,7 +37,7 @@
                 android:background="#8775FE" />
 
             <TextView
-                android:id="@+id/descriptionET"
+                android:id="@+id/descriptionTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView"
@@ -51,10 +51,10 @@
             android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:padding="10dp">
+            android:padding="5dp">
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/updateButton"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_marginHorizontal="5dp"
@@ -63,14 +63,16 @@
                 app:tint="#8675FD" />
 
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/deleteButton"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_marginHorizontal="5dp"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/delete"
                 app:tint="#8675FD" />
+
         </LinearLayout>
 
     </LinearLayout>
+
 </androidx.cardview.widget.CardView>
