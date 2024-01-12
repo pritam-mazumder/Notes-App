@@ -9,9 +9,10 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/addNotesButton"
+        style="@style/button_bordered"
         android:layout_width="0dp"
-        style="@style/buttonFilled"
         android:layout_height="wrap_content"
+        android:layout_marginVertical="2dp"
         android:text="Add Notes"
         app:layout_constraintBottom_toTopOf="@+id/viewNotesButton"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,9 +22,10 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/viewNotesButton"
+        style="@style/button_bordered"
         android:layout_width="0dp"
-        style="@style/buttonFilled"
         android:layout_height="wrap_content"
+        android:layout_marginVertical="2dp"
         android:text="View Notes"
         app:layout_constraintBottom_toTopOf="@+id/logoutButton"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,9 +34,10 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/logoutButton"
+        style="@style/button_bordered"
         android:layout_width="0dp"
-        style="@style/buttonFilled"
         android:layout_height="wrap_content"
+        android:layout_marginVertical="2dp"
         android:text="Log Out"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

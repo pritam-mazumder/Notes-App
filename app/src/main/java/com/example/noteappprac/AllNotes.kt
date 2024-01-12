@@ -89,7 +89,7 @@ class AllNotes : AppCompatActivity(), NotesAdapter.OnItemClickListener {
 
         val currentUser = auth.currentUser
         currentUser?.let { user ->
-            val noteReference = database.child("users").child(user.uid).child("notes")
+            val noteReference = database.child("user").child(user.uid).child("notes")
 
             val updateNote = NoteItems(newTitle, newDescription, noteId)
             noteReference.child(noteId).setValue(updateNote)
